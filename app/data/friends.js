@@ -14,6 +14,22 @@ var friendArray = [
             4,
             1
           ]
+      },
+      {
+        "name":"Tieb",
+        "photo":"https://avatars2.githubusercontent.com/u/49258174?s=400&u=e1d18d3bfc2d07d7dada39fa2a69e30133d3b81d&v=4",
+        "scores":[
+            3,
+            1,
+            2,
+            5,
+            5,
+            1,
+            2,
+            5,
+            4,
+            2
+          ]
       }
       
 ];

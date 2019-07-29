@@ -6,7 +6,8 @@
     <title>Home Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
@@ -21,26 +22,10 @@
         <p>Link to photo image (Required)</p>
         <input type="link" class="form-control" id="imageLink">
         <br>
+
         <h2>Question 1</h2>
         <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <div class="dropdown">
-            <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown"
-                aria-haspopup="true" aria-expanded="false">
-                Select an Option
-            </button>
-            <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                <button class="dropdown-item" type="button">1</button>
-                <button class="dropdown-item" type="button">2</button>
-                <button class="dropdown-item" type="button">3</button>
-                <button class="dropdown-item" type="button">4</button>
-                <button class="dropdown-item" type="button">5</button>
-
-            </div>
-        </div>
-
-        <h2>Question 1</h2>
-        <p id="Q1">You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <select id="Q1">
             <option selected>Select an Option</option>
             <option value="1">1</option>
             <option value="2">2</option>
@@ -51,8 +36,8 @@
           </select>
 
         <h2>Question 2</h2>
-        <p id="Q2">Generally speaking, you rely more on your experience than your imagination</p>
-        <select>
+        <p>Generally speaking, you rely more on your experience than your imagination</p>
+        <select id="Q2">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -63,8 +48,8 @@
               </select>
 
         <h2>Question 3</h2>
-        <p id="Q3">You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <p>You mind is always buzzing with unexplored ideas and plans</p>
+        <select id="Q3">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -74,9 +59,9 @@
     
               </select>
 
-        <h2 id="Q4">Question 4</h2>
+        <h2>Question 4</h2>
         <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <select id="Q4">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -86,9 +71,9 @@
     
               </select>
 
-        <h2 id="Q5">Question 5</h2>
+        <h2>Question 5</h2>
         <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <select id="Q5">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -98,9 +83,9 @@
     
               </select>
 
-        <h2 id="Q6">Question 6</h2>
+        <h2>Question 6</h2>
         <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <select id="Q6">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -109,21 +94,9 @@
                 <option value="5">5</option>
     
               </select>
-        <h2 id="Q7">Question 7</h2>
+        <h2>Question 7</h2>
         <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
-                <option selected>Select an Option</option>
-                <option value="1">1</option>
-                <option value="2">2</option>
-                <option value="3">3</option>
-                <option value="4">4</option>
-                <option value="5">5</option>
-    
-              </select>
-
-        <h2 id="Q8">Question 8</h2>
-        <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <select id="Q7">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -133,9 +106,9 @@
     
               </select>
 
-        <h2 id="Q9">Question 9</h2>
+        <h2>Question 8</h2>
         <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <select id="Q8">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -145,9 +118,9 @@
     
               </select>
 
-        <h2 id="Q10">Question 10</h2>
+        <h2>Question 9</h2>
         <p>You mind is always buzzing with unexplored ideas and plans</p>
-        <select>
+        <select id="Q9">
                 <option selected>Select an Option</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
@@ -156,10 +129,43 @@
                 <option value="5">5</option>
     
               </select>
+
+        <h2>Question 10</h2>
+        <p>You mind is always buzzing with unexplored ideas and plans</p>
+        <select id="Q10">
+                <option selected>Select an Option</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+    
+          </select>
         <br>
         <button type="submit" class="btn btn-primary submit">Submit</button>
 
     </div>
+
+
+    <div class="modal fade" id="surveyModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              ...
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
 </body>
@@ -171,15 +177,33 @@
 $(".submit").on("click", function(event) {
     event.preventDefault();
 
+    var scoresArray=[$("#Q1").val().trim(),
+                    $("#Q2").val().trim(),
+                    $("#Q3").val().trim(),
+                    $("#Q4").val().trim(),
+                    $("#Q5").val().trim(),
+                    $("#Q6").val().trim(),
+                    $("#Q7").val().trim(),
+                    $("#Q8").val().trim(),
+                    $("#Q9").val().trim(),
+                    $("#Q10").val().trim()
+
+                    ]
+
     var newFriend = {
         name: $("#name").val().trim(),
         photo: $("#imageLink").val().trim(),
-        scores: 
+        scores: scoresArray
     };
     console.log(newFriend);
     $.post("/api/survey", newFriend, function(data){
-      $("#name").val("");
-      $("#imageLink").val("");
+      console.log(data);
+      
+      $(".modal-body").append("Name:"+ data.name)
+      $(".modal-body").append("<img src='"+ data.photo+"' />")
+
+      $('#surveyModal').modal('show'); 
+      
     })
 
 });
